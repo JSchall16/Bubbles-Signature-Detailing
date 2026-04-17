@@ -1,0 +1,201 @@
+@charset "utf-8";
+/*
+   sample start file for final project - educational use only
+   
+   Author: Joshua Schaller  
+   Date: 4/13/26    
+   
+  
+
+*/
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+
+  background-image: url("BackgroundImg2.jpg");
+  background-repeat: no-repeat;
+  background-position: Center;
+  background-size:cover ;
+
+}
+#container {
+    width: 930px;
+    border-width: 1px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+
+header {
+    width: 910px;	/* reduced by 20px to accommodate shadow */
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid #888888;
+    box-shadow: 15px 15px 5px 0 #888888;
+    border-radius: 25px;  	
+}
+
+nav {
+    width: 200px;
+    margin: 0 5px 0 5px; 
+    padding: 25px 10px 0 10px;
+    float: left;
+    text-align: center;
+}
+
+nav ul {
+    font-weight: bold;
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 5px;
+    color: White;
+    text-decoration: none;
+    display:block;
+}
+
+nav ul li a:hover {
+    background: rgb(0, 139, 178);
+    border-radius: 10px;
+    color: Black;
+}
+
+#main {
+    width: 446px;
+    padding: 10px;
+    float: left;
+    color:White;
+    border-left: 2px solid;
+    border-right: 2px solid;    
+    background-image: url(images/ricepaper.jpg); 
+}
+
+#main {
+
+    text-indent: 1.5em;
+}
+        
+
+
+figure{
+    padding-top: 10px;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+nav {
+    width: 100%;
+    background-color: transparent; 
+    padding: 10px 0;
+    clear: both;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+nav a:hover {
+    color: rgb(0, 139, 178);
+}
+
+article p, aside p {
+	
+	color: white;
+    text-align: center; 
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+	padding: 0 15px;
+	     
+}
+ 
+
+h1, h2, h3 {
+  
+    color: white;
+    text-align:center;
+    width: 100%;      
+    margin-top: 0;
+    padding-top: 10px;
+
+}
+
+
+
+
+h2 {
+    font-size: 1.4em;
+    text-align: center;
+    padding-bottom: 0.5em;
+	
+}
+
+h3 {
+    text-align:center;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+	
+}
+
+footer {
+    width: 910px;
+    margin: 0;
+    padding: 10px;
+    background-color: Black;
+    clear: both;
+    color: White;
+    font-weight: bold;
+    text-align: center;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#wrapper {
+    
+    width: 930px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-radius: 25px; 
+}
+footer a:link {
+    color: White;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: White;
+    background-color: White;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
