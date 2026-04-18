@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<!-- 
+		Final Project CMIS 410
+		Author: Joshua Schaller
+		Date: 4/5/26
+		
+		These web pages are for educational purposes only, all content should be considered fictional. 
+	
+	-->
+
+<meta http-equiv = "Content-Type" content = "text/html; charset=utf-8" />
+<title>Bubbles Signature Detailing</title>
+   <link href="css/styles.css" rel="stylesheet"  />
+
+
+</head>
+
+<body>
+
+<div id ="container"  >
+
+<header>
+
+
+
+
+<a href="index.html"><img src="images/BubblesHeader2.png" alt="Circular Bubbles Header Image"/></a>
+
+
+
+
+</header> 
+
+<div id ="wrapper">
+		 
+<nav> 
+	<ul>
+	
+	  <li><a href = "index.html">Home</a></li>
+	  
+	  <li><a href = "pricing.html">Detailing Pricing</a></li>
+	  <li><a href = "reviews.html">Customer Reviews</a></li>
+	  <li><a href = "contact.html">Contact Us!</a></li>
+	   
+	</ul>
+</nav> 
+	 
+<article id = "main"> 
+<h2>Detailing Packages</h2>
+        
+        <div class="tier-box">
+            <h3>Silver Package — $75+</h3>
+            <p>Exterior hand wash, wheel cleaning, tire dressing, and basic interior vacuum.</p>
+        </div>
+
+        <div class="tier-box highlight">
+            <h3>Gold Package — $150+</h3>
+            <p>Signature Detail: Deep interior steam clean and hand-applied wax.</p>
+        </div>
+
+        <div class="tier-box">
+            <h3>Platinum Package — $300+</h3>
+            <p>The Works: Paint clay bar, engine bay detail, and ceramic sealant.</p>
+        </div>
+    </article>
+
+    <aside id="booking-area" class="pricing-col"> 
+        <h3>Set an Appointment</h3>
+        
+        <form id="bookingForm" class="appointment-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="appt-date">1. Choose a Day:</label>
+                <input type="date" id="appt-date" required>
+            </div>
+
+            <div class="form-group">
+                <label>2. Available Times (8am - 5pm):</label>
+                <div class="time-grid" id="timeGrid">
+                    </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Request Signature Detail</button>
+        </form>
+
+        <div id="successMessage" style="display:none; text-align:center; padding-top: 50px;">
+            <h3 style="color: rgb(0, 139, 178);">Appointment Requested!</h3>
+            <p>Thank you. Your request has been sent.</p>
+            <button onclick="window.location.reload();" class="submit-btn" style="width: auto; padding: 10px 20px; margin-top: 20px;">Book Another</button>
+        </div>
+    </aside>   
+
+   
+       
+		<footer style="background-color: transparent; border: none; height: 20px;">
+</footer>
+      
+</div>
+
+<script>
+    // Generate Time Slots
+    const times = ["8:00 AM", "9:00 AM", "10:00 AM", "11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM"];
+    const grid = document.getElementById('timeGrid');
+
+    times.forEach(time => {
+        let label = document.createElement('label');
+        label.className = "time-option";
+        label.innerHTML = `<input type="radio" name="time" value="${time}" required> <span>${time}</span>`;
+        grid.appendChild(label);
+    });
+
+    // Handle Form Submission (Clears the info)
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('bookingForm').style.display = 'none';
+        document.getElementById('successMessage').style.display = 'block';
+    });
+</script>
+
+
+</aside>   
+
+<footer> 
+
+	<p>Bubbles Signature Detailing<br />
+	1287 Ocean Ridge Blvd
+Fort Lauderdale, FL 33304
+United States<br />
+	<a href = "https://facebook.com" target="_blank">Facebook</a> |<a href = "https://www.instagram.com/?hl=en" target="_blank">Instagram</a> |<a href = "https://www.google.com/maps/place/Fort+Lauderdale,+FL/@26.1411921,-80.2322066,12z/data=!3m1!4b1!4m6!3m5!1s0x88d9012720facaf5:0x7602be7540bf8ebe!8m2!3d26.1224386!4d-80.1373174!16zL20vMHJqMHo?entry=ttu&g_ep=EgoyMDI2MDQxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">>Location</a> |<a href = "tel:9545550123">Call:(954)555-0123</a> | <a href = "mailto:contact@bubblesdetail.com">Email: mailto:contact@bubblesdetail.com</a></p>
+
+</footer>  
+
+</div> <!-- end wrapper --> 
+</div> <!-- end container -->
+
+</body>
+</html>
