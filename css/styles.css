@@ -67,41 +67,7 @@ nav {
     margin: 0 auto;
            
 } 
- /* 1. The Container: Stays 100% wide and clears any floats above it */
-nav {
-    width: 100%;
-    background-color: transparent; 
-    clear: both; 
-    display: block;
-    margin: 20px 0; /* Gives space between header and content */
-}
-
-/* 2. The List: Resets defaults and centers everything */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-/* 3. The Items: Changed to inline-block so they center easily without 'floating' */
-nav li {
-    display: inline-block;
-    margin: 0 20px; /* Adjust this to spread links apart */
-}
-
-/* 4. The Links: Styling only the clickable text */
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding: 5px 10px;
-}
-
-nav a:hover {
-    color: rgb(0, 139, 178);
-}   
+    
 
 
 nav ul {
@@ -127,7 +93,7 @@ nav ul li a:hover {
     padding: 10px;
     float: left;
     color:White;
-    border-left: 2px solid black;
+    border-left: 2px solid rgb(60, 60, 60);
     border-right: 2px solid rgb(0, 139, 178);    
     background-image: url(images/ricepaper.jpg); 
 }
@@ -139,7 +105,7 @@ nav ul li a:hover {
  #main img {
     width: 80%;          
     height: auto;
-    border: 1px solid black;
+    border: 1px solid rgb(60, 60, 60);
     display: block;
     margin: 15px auto 0 auto;   
 }      
@@ -232,7 +198,7 @@ h1, h2, h3 {
     text-align:center;
     width: 100%;      
     margin-top: 0;
-    padding-top: -1px;
+    padding-top: 1px;
 
 }
 
@@ -249,7 +215,7 @@ h2 {
 h3 {
     text-align:center;
     padding-bottom: 1em;
-    padding-top: -1px;
+    padding-top: 1px;
 	
 }
 
@@ -270,7 +236,7 @@ footer {
     
     width: 930px;
     margin-bottom: 10px;
-    border: 2px solid black;
+    border: 2px solid rgb(60, 60, 60);
     border-radius: 25px; 
 }
 
@@ -287,5 +253,87 @@ footer a:visited {
 
 footer a:hover {
     text-decoration: underline;
+}
+.appointment-form
+	
+{background-color: rgba(0, 0, 0, 0.45); 
+padding: 25px; border-radius: 15px; 
+box-shadow: 0 10px 25px rgba(0,0,0,0.4); 
+margin-top: 15px;
+}
+.form-group { 
+margin-bottom: 18px; 
+text-align: left;}
+
+.form-group label { 
+display: block; 
+margin-bottom: 6px; 
+font-weight: bold; 
+font-size: 0.95rem; 
+color: #ffffff;}
+
+.appointment-form input[type="text"], appointment-form input[type="date"] { 
+width: 100%;
+ padding: 10px 12px; 
+ border-radius: 8px; 
+ border: none; 
+ font-size: 0.95rem; 
+ box-sizing: border-box;}
 
 
+.time-grid { 
+display: grid; 
+grid-template-columns: repeat(2, 1fr); 
+gap: 10px; 
+margin-top: 10px;}
+
+.time-option { 
+background-color: rgba(255, 255, 255, 0.12);
+ padding: 8px 10px; 
+ border-radius: 8px; 
+ cursor: pointer; 
+ display: flex; 
+ align-items: center;
+ gap: 8px; } 
+ 
+ .time-option:hover { background-color: rgba(0, 139, 178, 0.6);}
+
+.submit-btn {
+	width: 100%; 
+	padding: 12px; 
+	margin-top: 15px; 
+	background-color: rgb(0, 139, 178); 
+	color: white; font-size: 1rem; 
+	font-weight: bold;
+	border: none; 
+	border-radius: 30px; 
+	cursor: pointer; 
+	transition: background-color 0.3s ease; } 
+	
+.submit-btn:hover 
+	{ background-color: rgb(0, 110, 145);}
+
+
+
+
+.package-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.package-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+
+.booking-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.booking-logo img {
+    width: 200px;
+    opacity: 0.95;
+}
