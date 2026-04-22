@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Customer Reviews | Bubbles Signature Detailing</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    
+    <style>
+        /* Remove the blue vertical line and keep layout tight */
+        #main {
+            border: none !important; 
+            padding: 20px; /* Reduced padding to fit small box */
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Using the RGB Cyan-Blue from your logo */
+        #main h1 {
+            color: rgb(86, 185, 224); 
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .review-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid rgb(86, 185, 224); /* Logo blue */
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .stars {
+            color: rgb(86, 185, 224);
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .review-text {
+            font-style: italic;
+            line-height: 1.5;
+            color: #e0e0e0;
+            font-size: 0.95em;
+        }
+
+        .customer-name {
+            display: block;
+            margin-top: 8px;
+            font-weight: bold;
+            color: rgb(86, 185, 224);
+            text-align: right;
+            font-size: 0.9em;
+        }
+
+        /* Compact Single Showcase Image */
+        .showcase-container {
+            margin: 25px auto;
+            text-align: center;
+            max-width: 80%; /* Keeps it from stretching the box */
+        }
+
+        .photo-box {
+            border: 1px solid rgb(86, 185, 224);
+            border-radius: 8px;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .photo-label {
+            background: rgb(86, 185, 224);
+            color: #000;
+            font-weight: bold;
+            padding: 5px;
+            text-transform: uppercase;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="container">
+    <header>
+        <a href="index.html"><img src="images/BubblesHeader2.png" alt="Bubbles Header"/></a>
+    </header> 
+
+    <div id="wrapper">
+        <nav> 
+            <ul>
+              <li><a href="index.html">Home</a></li>      
+              <li><a href="pricing.html">Detailing Pricing</a></li>
+              <li><a href="reviews.html">Customer Reviews</a></li>
+              <li><a href="contact.html">Contact Us!</a></li>
+            </ul>
+        </nav> 
+             
+        <article id="main"> 
+            <h1>Client Feedback</h1>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"The attention to detail is unmatched. My car looks better than the day it left the showroom floor."</p>
+                <span class="customer-name">— Michael S.</span>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"I've tried many detailers in Fort Lauderdale, but Bubble's is on another level. Flawless ceramic coating."</p>
+                <span class="customer-name">— Sarah L.</span>
+            </div>
+
+            <div class="showcase-container">
+                <div class="photo-box">
+                    <div class="photo-label">Signature Results (Before & After)</div>
+                    <img src="images/beforeafter.jpg" alt="Before and After Detailing">
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Professional, punctual, and passionate. They handled my vintage interior with extreme care."</p>
+                <span class="customer-name">— James R.</span>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Absolute perfection. The hand-crafted care really shows. My SUV has never looked this good."</p>
+                <span class="customer-name">— Emily D.</span>
+            </div>
+        </article>   
+
+        <footer> 
+            <p>Bubbles Signature Detailing<br />
+            1287 Ocean Ridge Blvd Fort Lauderdale, FL 33304<br />
+            <a href="tel:9545550123">Call: (954) 555-0123</a> | 
+            <a href="mailto:contact@bubblesdetail.com">Email: contact@bubblesdetail.com</a></p>
+        </footer>  
+    </div> 
+</div>
+
+</body>
+</html>
